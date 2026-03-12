@@ -1,1 +1,1 @@
-# CSE470-Project
+# “If I fail, I try again, and again, and again. If you fail, are you going to try again? The human spirit can handle much worse than we realize.”---[Nick Vujicic](https://en.wikipedia.org/wiki/Nick_Vujicic)
