@@ -1,0 +1,239 @@
+/* .newsletter{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 150px;
+    padding: 0px 140px;
+    width: 655;
+    height: 40vh;
+    gap: 30px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+
+}
+
+
+.newsletter h1{
+    color: #454545;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 0.5;
+}
+
+
+.newsletter p{
+    color: #454545;
+    font-size: 25px;
+    line-height: 0.2;
+    font-weight: 600;
+    
+}
+
+.newsletter div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 730px;
+    height: 50px;
+    border-radius: 80px;
+    border: 2px solid #e3e3e3;
+}
+
+
+.newsletter input{
+    width: 500px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: none;
+    outline: none;
+    color: #616161;
+    font-family: Poppins;
+    font-size: 16px;
+}
+
+
+.newsletter div button{
+    width: 170px;
+    height: 50px;
+    border-radius: 80px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.newsletter {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+.newsletter h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.newsletter p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+.newsletter-form {
+  width: 100%;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.newsletter-input {
+  flex: 1;
+  min-width: 250px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-input:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.newsletter-input.error {
+  border: 2px solid black;
+  animation: shake 0.5s ease-in-out;
+}
+
+.subscribe-button {
+  padding: 12px 24px;
+  background: linear-gradient(45deg, #ff6b6b, #020202);
+  color: black;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+  box-shadow: 0 2px 10px rgba(238, 90, 36, 0.3);
+}
+
+.subscribe-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(238, 90, 36, 0.4);
+}
+
+.subscribe-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.subscribe-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.message {
+  margin-top: 1rem;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  animation: slideIn 0.3s ease-out;
+}
+
+.message.success {
+  background-color: rgba(76, 175, 80, 0.2);
+  border: 1px solid rgba(76, 175, 80, 0.3);
+  color: black;
+}
+
+.message.error {
+  background-color: rgba(244, 67, 54, 0.2);
+  border: 1px solid rgba(244, 67, 54, 0.3);
+  color: #f44336;
+}
+
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .newsletter {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .newsletter h1 {
+    font-size: 1.5rem;
+  }
+  
+  .input-container {
+    flex-direction: column;
+  }
+  
+  .newsletter-input {
+    min-width: auto;
+    width: 100%;
+  }
+  
+  .subscribe-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletter h1 {
+    font-size: 1.3rem;
+  }
+  
+  .newsletter p {
+    font-size: 1rem;
+  }
+}
