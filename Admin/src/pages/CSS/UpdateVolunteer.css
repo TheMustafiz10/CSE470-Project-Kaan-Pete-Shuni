@@ -1,0 +1,200 @@
+/* ================= Update Volunteer Page ================= */
+.update-volunteer {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.update-volunteer h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #0066cc; /* blue instead of red for edit mode */
+}
+
+.update-volunteer p {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  line-height: 1.4;
+  color: #555;
+}
+
+/* ================= Form Layout ================= */
+form fieldset {
+  border: 2px solid #0066cc;
+  border-radius: 8px;
+  padding: 20px 25px 30px;
+  margin-bottom: 25px;
+}
+
+form legend {
+  font-weight: 600;
+  color: #0066cc;
+  padding: 0 10px;
+  font-size: 1.2rem;
+}
+
+/* ================= Inputs ================= */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px 15px;
+  margin-top: 8px;
+  margin-bottom: 18px;
+  border-radius: 6px;
+  border: 1.8px solid #ddd;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #0066cc;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 102, 204, 0.2);
+}
+
+form textarea {
+  min-height: 80px;
+}
+
+form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1rem;
+}
+
+/* ================= Checkboxes & Radios ================= */
+form label input[type="checkbox"],
+form label input[type="radio"] {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.availability-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.availability-group label {
+  flex: 1 0 140px;
+  font-weight: 400;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+/* ================= Buttons ================= */
+button[type="submit"] {
+  background-color: #0066cc;
+  color: #fff;
+  font-size: 1.15rem;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button[type="submit"]:disabled {
+  background-color: #9fc7f1;
+  cursor: not-allowed;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+  background-color: #004c99;
+}
+
+/* Cancel Button */
+button.cancel-btn {
+  background-color: #999;
+  margin-top: 15px;
+}
+
+button.cancel-btn:hover {
+  background-color: #666;
+}
+
+/* ================= Footer ================= */
+.footer-info {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* ================= Password Fields ================= */
+.password-input-container {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.password-input-container input {
+  width: 100%;
+  padding: 12px 40px 12px 12px;
+  border: 1.8px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.password-input-container input:focus {
+  border-color: #0066cc;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 102, 204, 0.3);
+}
+
+.password-input-container svg {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+  font-size: 1.2rem;
+  transition: color 0.2s;
+}
+
+.password-input-container svg:hover {
+  color: #0066cc;
+}
+
+.password-error-msg {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 600px) {
+  .availability-group label {
+    flex: 1 0 100%;
+  }
+  
+  .password-input-container input {
+    font-size: 0.95rem;
+  }
+  
+  .password-input-container svg {
+    font-size: 1rem;
+  }
+}
